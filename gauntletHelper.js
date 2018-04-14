@@ -37,7 +37,7 @@ var GauntletHelperModule = function () {
 
     var createDivs = function() {
         if (!divsCreated && $(parentDiv).length) {
-            var width = 400;
+            var width = 440;
             var height = 205;
             var marginBottom = 200;
             var separation = 6;
@@ -287,7 +287,7 @@ var GauntletHelperModule = function () {
 
                         if (name in rankings) {
                             rankings[name] = {
-                                ranking: name + rankings[name].ranking + ' - ' + match[1] + ': ' + match[3],
+                                ranking: name + ': ' + rankings[name].ranking + ' - ' + match[1] + ': ' + match[3],
                                 description: rankings[name].description + ' ' + match[1] + ': ' + match[4]
                             };
                         } else {
