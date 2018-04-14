@@ -37,7 +37,7 @@ var GauntletHelperModule = function () {
 
     var createDivs = function() {
         if (!divsCreated && $(parentDiv).length) {
-            var width = 250;
+            var width = 400;
             var height = 205;
             var marginBottom = 165;
             var separation = 6;
