@@ -13,7 +13,7 @@ var GauntletHelperModule = function () {
     var genRankingRegEx = /^#([0-9]+)[-– ]+([a-zA-Z' ]+?) [-–] .*/;
     var parentDiv = '#app-overlay-region';
     var gauntletDiv = '#app-arena';
-    var generalDivTitle = '<p align=center style="font-size:1em;line-height:1em;color:white">SDK\'s Gauntlet Helper - powered by <a style="text-decoration:underline" href="' + rankingsUrl + '" target="_blank">zelda\'s Gauntlet Rankings</a></p>';
+    var generalDivTitle = '';
     var generalNames = ['Zirix', 'Sajj', 'Lilithe', 'Cassyva', 'Argeon', 'Ziran', 'Faie', 'Kara', 'Vaath', 'Starhorn', 'Kaleos', 'Reva'];
 
     var steam;
