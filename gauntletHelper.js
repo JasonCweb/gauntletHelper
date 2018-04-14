@@ -8,9 +8,9 @@ var GauntletHelperModule = function () {
 
     var rankingsUrl = 'https://docs.google.com/document/d/1r3tX0myAjXHo-EzGmQ2v3E-P2fLCB-8lcCdKkRzeQq0'
     var rankingsUrlTxt = rankingsUrl + '/export?format=txt';
-    var rankingRegEx = /^([a-zA-Z0',\- ]*?)[\-â€“ ]*\(([a-zA-Z0-9 ]*)\)[ ]*[\-â€“][ ]*(.+)/;
-    var genRegEx = /^\s*([a-zA-Z']*):[ ]*([a-zA-Z0',\- ]*?)[\-â€“ ]*\([a-zA-Z]*[ ]*([0-9\-]*)\)[ ]*[\-â€“][ ]*(.+)/;
-    var genRankingRegEx = /^#([0-9]+)[-â€“ ]+([a-zA-Z' ]+?) [-â€“] .*/;
+    var rankingRegEx = /^([a-zA-Z0',\- ]*?)[\-– ]*\(([a-zA-Z0-9 ]*)\)[ ]*[\-–][ ]*(.+)/;
+    var genRegEx = /^\s*([a-zA-Z']*):[ ]*([a-zA-Z0',\- ]*?)[\-– ]*\([a-zA-Z]*[ ]*([0-9\-]*)\)[ ]*[\-–][ ]*(.+)/;
+    var genRankingRegEx = /^#([0-9]+)[-– ]+([a-zA-Z' ]+?) [-–] .*/;
     var parentDiv = '#app-overlay-region';
     var gauntletDiv = '#app-arena';
     var generalDivTitle = '<p align=center style="font-size:1em;line-height:1em;color:white">SDK\'s Gauntlet Helper - powered by <a style="text-decoration:underline" href="' + rankingsUrl + '" target="_blank">zelda\'s Gauntlet Rankings</a></p>';
@@ -39,7 +39,7 @@ var GauntletHelperModule = function () {
         if (!divsCreated && $(parentDiv).length) {
             var width = 250;
             var height = 100;
-            var marginBottom = 185;
+            var marginBottom = 205;
             var separation = 10;
 
             var style = {
@@ -230,7 +230,7 @@ var GauntletHelperModule = function () {
     }
 
     var cleanText = function(text) {
-        return text.replace("â€™", "'").replace('\r','');
+        return text.replace("’", "'").replace('\r','');
     }
 
     var formatName = function(name) {
