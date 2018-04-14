@@ -77,13 +77,13 @@ var GauntletHelperModule = function () {
             cardDivs = [3];
 
             // Card IDs are backwards, so these are backwards to fix it
-            cardDivs[2] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - (width + separation) })
+            cardDivs[2] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - (width + separation) - 60 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
-            cardDivs[1] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) })
+            cardDivs[1] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - 60 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
-            cardDivs[0] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) + (width + separation) })
+            cardDivs[0] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) + (width + separation) - 60 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
             // Setting visibility to hidden in the CSS seems to make it always hidden, so doing this instead
