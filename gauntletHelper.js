@@ -287,7 +287,7 @@ var GauntletHelperModule = function () {
 
                         if (name in rankings) {
                             rankings[name] = {
-                                ranking: rankings[name].ranking + ' - ' + match[1] + ': ' + match[3],
+                                ranking: name + rankings[name].ranking + ' - ' + match[1] + ': ' + match[3],
                                 description: rankings[name].description + ' ' + match[1] + ': ' + match[4]
                             };
                         } else {
