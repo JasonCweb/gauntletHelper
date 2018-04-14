@@ -64,7 +64,7 @@ var GauntletHelperModule = function () {
                 width: generalDivWidth,
                 height: 'auto',
                 'margin-bottom': marginBottom + height + separation,
-                'margin-left': (-generalDivWidth / 2)
+                'margin-left': (-generalDivWidth / 2 - 60)
             }).appendTo($(parentDiv).css('position', 'relative'));
 
             var textStyle = {
