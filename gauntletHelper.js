@@ -97,9 +97,9 @@ var GauntletHelperModule = function () {
     var updateCard = function(i) {
         var name = getCardName(currentCards[i]);
         if (name in rankings) {
-            cardDivs[i].html('<p align=center style="font-size:.7em;line-height:1em;color:orange">' + name + '</p><p align=center style="font-size:1em;line-height:1em;color:white">' + rankings[name].ranking + '</p><p style="font-size:0.7em;line-height:1em;color:white">' + rankings[name].description + '</p>');
+            cardDivs[i].html('<p align=center style="font-size:.7em;line-height:1em;color:orange">' + name + '</p><p align=center style="font-size:1em;line-height:1em;color:khaki">' + rankings[name].ranking + '</p><p style="font-size:0.7em;line-height:1em;color:powderblue">' + rankings[name].description + '</p>');
         } else{
-            cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:white">\'' + name + '\' not found in rankings.</p>');
+            cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:powderblue">\'' + name + '\' not found in rankings.</p>');
         }
     }
 
