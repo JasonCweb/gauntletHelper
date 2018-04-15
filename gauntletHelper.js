@@ -101,6 +101,7 @@ var GauntletHelperModule = function () {
         } else{
             cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:white">\'' + name + '\' not found in rankings.</p>');
         }
+        cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:white">\'' + name + '\' is the name!!</p>');
     }
 
     var getCardName = function(cardId) {
@@ -284,7 +285,6 @@ var GauntletHelperModule = function () {
                     match = genRegEx.exec(lines[i]);
                     if (match != null) {
                         var name = formatName(match[2]);
-                        console.log('NAME IS:' + name );
                         if (name in rankings) {
                             rankings[name] = {
                                 ranking: name + ': ' + rankings[name].ranking + ' - ' + match[1] + ': ' + match[3],
