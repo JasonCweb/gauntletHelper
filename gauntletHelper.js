@@ -284,7 +284,7 @@ var GauntletHelperModule = function () {
                     match = genRegEx.exec(lines[i]);
                     if (match != null) {
                         var name = formatName(match[2]);
-
+                        console.log('NAME IS:' + name );
                         if (name in rankings) {
                             rankings[name] = {
                                 ranking: name + ': ' + rankings[name].ranking + ' - ' + match[1] + ': ' + match[3],
