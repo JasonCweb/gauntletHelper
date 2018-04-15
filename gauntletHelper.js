@@ -46,7 +46,7 @@ var GauntletHelperModule = function () {
                 position: 'absolute',
                 bottom: '50%',
                 left: '50%',
-                backgroundColor: 'black',
+                backgroundColor: '30,30,30',
                 padding: 3,
                 'overflow-y': 'hidden',
                 'border-radius': 8,
