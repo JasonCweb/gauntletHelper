@@ -64,7 +64,7 @@ var GauntletHelperModule = function () {
                 width: generalDivWidth,
                 height: 'auto',
                 'margin-bottom': marginBottom + height + separation,
-                'margin-left': (-generalDivWidth / 2 - 440)
+                'margin-left': (-generalDivWidth / 2 - 350)
             }).appendTo($(parentDiv).css('position', 'relative'));
 
             var textStyle = {
@@ -77,13 +77,13 @@ var GauntletHelperModule = function () {
             cardDivs = [3];
 
             // Card IDs are backwards, so these are backwards to fix it
-            cardDivs[2] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - (width + separation) - 440 })
+            cardDivs[2] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - (width + separation) - 350 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
-            cardDivs[1] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - 440 })
+            cardDivs[1] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - 350 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
-            cardDivs[0] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) + (width + separation) - 440 })
+            cardDivs[0] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) + (width + separation) - 350 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
             // Setting visibility to hidden in the CSS seems to make it always hidden, so doing this instead
