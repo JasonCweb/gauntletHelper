@@ -46,7 +46,7 @@ var GauntletHelperModule = function () {
                 position: 'absolute',
                 bottom: '50%',
                 left: '50%',
-                backgroundColor: '1E1E1E',
+                backgroundColor: '#1E1E1E',
                 padding: 3,
                 'overflow-y': 'hidden',
                 'border-radius': 8,
@@ -99,9 +99,9 @@ var GauntletHelperModule = function () {
     var updateCard = function(i) {
         var name = getCardName(currentCards[i]);
         if (name in rankings) {
-            cardDivs[i].html('<p align=center style="font-size:.7em;line-height:1em;color:orange">' + name + '</p><p align=center style="font-size:1em;line-height:1em;color:khaki">' + rankings[name].ranking + '</p><p style="font-size:0.7em;line-height:1em;color:9CD0C6">' + rankings[name].description + '</p>');
+            cardDivs[i].html('<p align=center style="font-size:.7em;line-height:1em;color:orange">' + name + '</p><p align=center style="font-size:1em;line-height:1em;color:khaki">' + rankings[name].ranking + '</p><p style="font-size:0.7em;line-height:1em;color:#9CD0C6">' + rankings[name].description + '</p>');
         } else{
-            cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:9CD0C6">\'' + name + '\' not found in rankings.</p>');
+            cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:#9CD0C6">\'' + name + '\' not found in rankings.</p>');
         }
     }
 
@@ -171,7 +171,7 @@ var GauntletHelperModule = function () {
                 result += '</ul></td>';
             }
             if (i == 0 || i == splitIndex) {
-                result += '<td width="50%" valign="top"><ul style="font-size:0.7em;line-height:1em;color:9CD0C6;list-style-type:disc;padding-left:1.5em">';
+                result += '<td width="50%" valign="top"><ul style="font-size:0.7em;line-height:1em;color:#9CD0C6;list-style-type:disc;padding-left:1.5em">';
             }
 
             result += '<li>' + notes[i] + '</li>';
