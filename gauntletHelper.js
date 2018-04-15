@@ -37,9 +37,9 @@ var GauntletHelperModule = function () {
 
     var createDivs = function() {
         if (!divsCreated && $(parentDiv).length) {
-            var width = 415;
+            var width = 420;
             var height = 245;
-            var marginBottom = 200;
+            var marginBottom = 190;
             var separation = 6;
 
             var style = {
@@ -50,7 +50,8 @@ var GauntletHelperModule = function () {
                 padding: 3,
                 'overflow-y': 'hidden',
                 'border-radius': 8,
-                border: 'solid gold',
+                border: 'solid lightyellow',
+                borderWidth: '1px',
                 zIndex: 1000
             };
 
@@ -65,7 +66,7 @@ var GauntletHelperModule = function () {
                 width: generalDivWidth,
                 height: 'auto',
                 'margin-bottom': marginBottom + height + separation,
-                'margin-left': (-generalDivWidth / 2 - 325)
+                'margin-left': (-generalDivWidth / 2 - 320)
             }).appendTo($(parentDiv).css('position', 'relative'));
 
             var textStyle = {
@@ -78,13 +79,13 @@ var GauntletHelperModule = function () {
             cardDivs = [3];
 
             // Card IDs are backwards, so these are backwards to fix it
-            cardDivs[2] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - (width + separation) - 325 })
+            cardDivs[2] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - (width + separation) - 320 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
-            cardDivs[1] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - 325 })
+            cardDivs[1] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) - 320 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
-            cardDivs[0] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) + (width + separation) - 325 })
+            cardDivs[0] = $('<div />').css(style).css(cardStyle).css({ 'margin-left': (-width / 2) + (width + separation) - 320 })
                 .appendTo($(parentDiv).css('position', 'relative'));
 
             // Setting visibility to hidden in the CSS seems to make it always hidden, so doing this instead
