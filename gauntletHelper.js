@@ -97,11 +97,10 @@ var GauntletHelperModule = function () {
     var updateCard = function(i) {
         var name = getCardName(currentCards[i]);
         if (name in rankings) {
-            cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:white">' + rankings[name].ranking + '</p><p style="font-size:0.7em;line-height:1em;color:white">' + rankings[name].description + '</p>');
+            cardDivs[i].html('<p align=center style="font-size:.7em;line-height:1em;color:orange">' + name + '</p><p align=center style="font-size:1em;line-height:1em;color:white">' + rankings[name].ranking + '</p><p style="font-size:0.7em;line-height:1em;color:white">' + rankings[name].description + '</p>');
         } else{
             cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:white">\'' + name + '\' not found in rankings.</p>');
         }
-        cardDivs[i].html('<p align=center style="font-size:1em;line-height:1em;color:white">\'' + name + '\' is the name!!</p>');
     }
 
     var getCardName = function(cardId) {
@@ -287,7 +286,7 @@ var GauntletHelperModule = function () {
                         var name = formatName(match[2]);
                         if (name in rankings) {
                             rankings[name] = {
-                                ranking: name + ': ' + rankings[name].ranking + ' - ' + match[1] + ': ' + match[3],
+                                ranking: rankings[name].ranking + ' - ' + match[1] + ': ' + match[3],
                                 description: rankings[name].description + ' ' + match[1] + ': ' + match[4]
                             };
                         } else {
