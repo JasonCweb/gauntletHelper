@@ -14,7 +14,7 @@ var GauntletHelperModule = function () {
     var parentDiv = '#app-overlay-region';
     var gauntletDiv = '#app-arena';
     var generalDivTitle = '';
-    var generalNames = ['Zirix', 'Sajj', 'Lilithe', 'Cassyva', 'Argeon', 'Ziran', 'Faie', 'Kara', 'Vaath', 'Starhorn', 'Kaleos', 'Reva'];
+    var generalNames = ['Zirix', 'Sajj', 'Lilithe', 'Cassyva', 'Argeon', 'Ziran', 'Faie', 'Kara', 'Vaath', 'Starhorn', 'Kaleos', 'Reva', 'Ragnora', 'Brome', 'Shidai', 'Ciphyron', 'Maehv'];
 
     var steam;
 
