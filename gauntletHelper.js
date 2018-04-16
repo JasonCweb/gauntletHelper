@@ -6,7 +6,7 @@ var GauntletHelperModule = function () {
 
     var TEST = false;
 
-    var rankingsUrl = 'https://docs.google.com/document/d/1r3tX0myAjXHo-EzGmQ2v3E-P2fLCB-8lcCdKkRzeQq0'
+    var rankingsUrl = 'https://docs.google.com/document/d/1pZ7yt8MroqI3dZmPYEP8JiGEhrxB4-NujunsJ-lQ5gg'
     var rankingsUrlTxt = rankingsUrl + '/export?format=txt';
     var rankingRegEx = /^([a-zA-Z0',\- ]*?)[\-– ]*\(([a-zA-Z0-9 ]*)\)[ ]*[\-–][ ]*(.+)/;
     var genRegEx = /^\s*([a-zA-Z']*):[ ]*([a-zA-Z0',\- ]*?)[\-– ]*\([a-zA-Z]*[ ]*([0-9\-]*)\)[ ]*[\-–][ ]*(.+)/;
